@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Inter",sans-serif;
+}
+
+body{
+  background:#f3f5fa;
+}
+
+/* PAGE */
+
+.page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px 20px;
+}
+
+/* CARD */
+
+.login-card{
+  width:375px;
+  background:#ffffff;
+  border-radius:30px;
+  overflow:hidden;
+  box-shadow:
+  0px 10px 30px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+
+.header{
+  position:relative;
+  padding:35px 24px 30px;
+  background:
+  radial-gradient(
+    circle at center,
+    rgba(71,97,255,.15) 0%,
+    rgba(71,97,255,0) 60%
+  ),
+  linear-gradient(
+    180deg,
+    #0e1024 0%,
+    #13193b 100%
+  );
+  color:white;
+}
+
+/* GRID EFFECT */
+
+.header::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-image:
+  linear-gradient(
+    rgba(255,255,255,.05) 1px,
+    transparent 1px
+  ),
+  linear-gradient(
+    90deg,
+    rgba(255,255,255,.05) 1px,
+    transparent 1px
+  );
+
+  background-size:24px 24px;
+}
+
+.logo-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  position:relative;
+  z-index:2;
+}
+
+.logo-box{
+  width:18px;
+  height:18px;
+  background:#3764ff;
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+}
+
+.logo-text{
+  font-size:13px;
+  font-weight:700;
+}
+
+.header {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  text-align:left;
+}
+.header h1{
+  margin-top:30px;
+  margin-left:0px;
+  font-size:24px;
+  line-height:1.25;
+  font-weight:800;
+  position:relative;
+  z-index:2;
+}
+
+.header p{
+  margin-top:12px;
+  font-size:12px;
+  color:#d9d9d9;
+  position:relative;
+  z-index:2;
+}
+
+.header p a{
+  color:#4f7dff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* FORM */
+
+.form-section{
+  padding:24px;
+}
+
+.input-group{
+  margin-bottom:16px;
+}
+
+.input-group label{
+  display:block;
+  text-align:left;
+  margin-bottom:8px;
+  width:100px;
+  font-size:12px;
+  color:#8d8d99;
+  font-weight:500;
+}
+
+.input-group input{
+  width:100%;
+  height:48px;
+  border:1px solid #e7e7ec;
+  border-radius:10px;
+  padding:0 14px;
+  font-size:14px;
+  color:#444;
+  outline:none;
+  background:white;
+}
+
+.password-wrapper{
+  position:relative;
+}
+
+.eye{
+  position:absolute;
+  right:15px;
+  top:15px;
+  color:#a4a8b3;
+}
+
+/* OPTIONS */
+
+.options{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:10px;
+}
+
+.remember{
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.remember span{
+  font-size:12px;
+  color:#8d8d99;
+}
+
+.options a{
+  font-size:12px;
+  color:#4673ff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn{
+  width:100%;
+  height:48px;
+  border:none;
+  border-radius:10px;
+  margin-top:22px;
+  cursor:pointer;
+
+  color:white;
+  font-size:14px;
+  font-weight:600;
+
+  background:
+  linear-gradient(
+    180deg,
+    #4e82ff 0%,
+    #245ce8 100%
+  );
+
+  box-shadow:
+  0px 6px 14px rgba(54,97,255,.35);
+}
+
+/* DIVIDER */
+
+.divider{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:26px 0;
+}
+
+.divider span{
+  flex:1;
+  height:1px;
+  background:#ececec;
+}
+
+.divider p{
+  font-size:12px;
+  color:#8d8d99;
+}
+
+/* SOCIAL */
+
+.social-login{
+  display:flex;
+  gap:12px;
+}
+
+.social-login button{
+  flex:1;
+  height:46px;
+  border:1px solid #ececec;
+  border-radius:10px;
+  background:rgb(54, 15, 194);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.social-login svg{
+  font-size:16px;
+}
+
+/* TERMS */
+
+.terms{
+  margin-top:35px;
+  text-align:center;
+  font-size:11px;
+  line-height:1.7;
+  color:#8d8d99;
+}
+
+.terms strong{
+  color:#222;
+  font-weight:600;
+}
+.link-btn {
+  color: #4f7dff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
